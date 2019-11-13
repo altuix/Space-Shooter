@@ -12,6 +12,13 @@ public class PlayerControl : MonoBehaviour
     public float hiz = 1, egim = 1.55f;
 
     public float maxX, minX, maxZ, minZ;
+
+    float atisZamani = 0;
+    public float atisAraligi;
+
+    public GameObject kursun;
+    public Transform kursunPozisyonu;
+
     void Start()
     {
         Fizik = GetComponent<Rigidbody>();
@@ -36,5 +43,21 @@ public class PlayerControl : MonoBehaviour
 
         //kanatları eğmesi için
         Fizik.rotation = Quaternion.Euler(0, 0, Fizik.velocity.x * -egim);
+    }
+
+
+    //her frame de çalışacak
+    void Update()
+    {
+        // mouse click && atış aralığı uygunsa  
+        if (Input.GetButton("Fire1") && Time.time > atisZamani)
+        {
+            //atış zamanı güncelledik
+            atisZamani = Time.time + atisAraligi;
+
+            //kurşunun oluşması,çıkış yeri,ve gideciği yön için ayarlamalar
+            Instantiate(kursun, kursunPozisyonu.position, Quaternion.identity);
+            Debug.Log("tiklandi");
+        }
     }
 }
