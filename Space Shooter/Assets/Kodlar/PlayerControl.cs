@@ -19,6 +19,7 @@ public class PlayerControl : MonoBehaviour
     public GameObject kursun;
     public Transform kursunPozisyonu;
 
+    
     void Start()
     {
         Fizik = GetComponent<Rigidbody>();
