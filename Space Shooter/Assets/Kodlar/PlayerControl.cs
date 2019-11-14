@@ -19,10 +19,12 @@ public class PlayerControl : MonoBehaviour
     public GameObject kursun;
     public Transform kursunPozisyonu;
 
+    AudioSource audio;
     
     void Start()
     {
         Fizik = GetComponent<Rigidbody>();
+        audio = GetComponent<AudioSource>();
     }
 
 
@@ -59,6 +61,7 @@ public class PlayerControl : MonoBehaviour
             //kurşunun oluşması,çıkış yeri,ve gideciği yön için ayarlamalar
             Instantiate(kursun, kursunPozisyonu.position, Quaternion.identity);
             Debug.Log("tiklandi");
+            audio.Play();
         }
     }
 }
