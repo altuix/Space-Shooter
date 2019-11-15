@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class OyunKontrol : MonoBehaviour
 {
@@ -10,8 +11,11 @@ public class OyunKontrol : MonoBehaviour
     public float olsuturmaBekleme;
     public float donguBekleme;
 
+    public Text ScoreText;
+    int score = 0;
     void Start()
     {
+        ScoreText.text = "Score: " + 0;
         StartCoroutine(olustur());
     }
 
@@ -24,11 +28,10 @@ public class OyunKontrol : MonoBehaviour
             //10 item gelecek
             for (int i = 0; i < 10; i++)
             {
-                Debug.Log(-randomPos.x);
-                Debug.Log(randomPos.x);
+             
                 //belli x aralığında
                 float rangeResultX = Random.Range(-randomPos.x, randomPos.x);
-                Debug.Log(rangeResultX);
+            
                 Vector3 vec = new Vector3(
                    rangeResultX,
                     0,
@@ -48,5 +51,12 @@ public class OyunKontrol : MonoBehaviour
         }
 
 
+    }
+
+    public void scoreArttir(int gelenScore)
+    {
+        score += gelenScore;
+        ScoreText.text = "Score: " + score;
+        Debug.Log(score);
     }
 }

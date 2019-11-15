@@ -105,7 +105,7 @@ MonoBehaviour:
   m_LastWindowPixelSize: {x: 908, y: 442}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
-  m_LowResolutionForAspectRatios: 01000000000000000000
+  m_LowResolutionForAspectRatios: 01000001000000000000
   m_XRRenderMode: 0
 --- !u!114 &3
 MonoBehaviour:
@@ -128,8 +128,8 @@ MonoBehaviour:
     y: 0
     width: 908
     height: 947
-  m_MinSize: {x: 202, y: 422}
-  m_MaxSize: {x: 4002, y: 8022}
+  m_MinSize: {x: 202, y: 444}
+  m_MaxSize: {x: 4002, y: 8044}
   vertical: 1
   controlID: 54
 --- !u!114 &4
@@ -194,9 +194,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -0.6864233, y: -0.9995809, z: 0.74147296}
+    m_Target: {x: 0, y: 0, z: 0}
     speed: 2
-    m_Value: {x: -0.6864233, y: -0.9995809, z: 0.74147296}
+    m_Value: {x: 0, y: 0, z: 0}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -225,13 +225,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: -0.33368933, y: 0.51890326, z: -0.23005283, w: -0.75265074}
+    m_Target: {x: 0.59829223, y: 0.007211245, z: -0.0053847716, w: 0.80122733}
     speed: 2
-    m_Value: {x: -0.3336866, y: 0.51889896, z: -0.23005094, w: -0.75264454}
+    m_Value: {x: 0.5982923, y: 0.007211246, z: -0.005384772, w: 0.80122745}
   m_Size:
-    m_Target: 4.245234
+    m_Target: 16.977108
     speed: 2
-    m_Value: 4.245234
+    m_Value: 16.977108
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -408,8 +408,8 @@ MonoBehaviour:
     y: 631
     width: 445
     height: 316
-  m_MinSize: {x: 234, y: 272}
-  m_MaxSize: {x: 10004, y: 10022}
+  m_MinSize: {x: 230, y: 250}
+  m_MaxSize: {x: 10000, y: 10000}
   m_ActualView: {fileID: 11}
   m_Panes:
   - {fileID: 11}
@@ -454,20 +454,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/MyPrefabs
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets
+  - Assets/MyPrefabs
   m_LastFoldersGridSize: -1
   m_LastProjectPath: X:\YeniD\Unity Projects\SpaceShooter\Space-Shooter\Space Shooter
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 11}
-    m_SelectedIDs: 682d0000
-    m_LastClickedID: 11624
-    m_ExpandedIDs: 00000000682d00006c2e000000ca9a3b
+    m_SelectedIDs: 562f0000
+    m_LastClickedID: 12118
+    m_ExpandedIDs: 00000000762d00007a2e000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -483,7 +483,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 0}
+      m_ClientGUIView: {fileID: 10}
     m_SearchString: 
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
@@ -495,7 +495,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000682d00006c2e0000
+    m_ExpandedIDs: 00000000762d00007a2e0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -520,8 +520,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 922e0000
-    m_LastClickedInstanceID: 11922
+    m_SelectedInstanceIDs: 
+    m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: 
     m_RenameOverlay:
@@ -547,7 +547,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 411}
+    m_ScrollPosition: {x: 0, y: 0}
     m_GridSize: 64
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 180
@@ -613,5 +613,5 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_PreviewWindow: {fileID: 0}
-  m_LastInspectedObjectInstanceID: 11922
+  m_LastInspectedObjectInstanceID: -1
   m_LastVerticalScrollValue: 0
