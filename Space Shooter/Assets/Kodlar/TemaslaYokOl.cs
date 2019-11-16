@@ -28,6 +28,8 @@ public class TemaslaYokOl : MonoBehaviour
             Destroy(other.gameObject);
             Destroy(gameObject);
             Instantiate(patlama, transform.position, transform.rotation);
+
+            //burada oyun kontrol içerisinde olan score arttır fonksiyonunu çağırdık
             kontrol.scoreArttir(1);
         }
 
@@ -36,6 +38,7 @@ public class TemaslaYokOl : MonoBehaviour
         {
 
             Instantiate(playerPatlama, other.transform.position, other.transform.rotation);
+            kontrol.oyunBitti();
         }
     }
 }
